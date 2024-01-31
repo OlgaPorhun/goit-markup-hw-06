@@ -168,13 +168,23 @@ address {
 .hero {
    background-color: #2E2F42;
    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    rgba(46, 47, 66, 0.7)), url(../images/mobile-hero.jpg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-   padding-top: 188px;
-   padding-bottom: 188px;
-   max-width: 1440px;
+   /* padding-top: 188px;
+   padding-bottom: 188px; */
+   padding-top: 72px;
+   padding-bottom: 72px;
+   /* max-width: 1440px; */
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/mobile-hero2x.jpg);
+    }
 }
 
 .hero-container {
@@ -187,13 +197,17 @@ address {
 .hero-title {
     color: #FFF;
     text-align: center;
-    font-size: 56px;
+    /* font-size: 56px; */
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;    
+    /* line-height: 1.07;*/
+    line-height: 1.11;
     letter-spacing: 0.02em;
-    max-width: 496px;
+    /* max-width: 496px; */
+    width: 216px;
     margin: 0 auto;
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
+    margin-bottom: 72px;
 }
 
 .hero-btn {
@@ -642,9 +656,9 @@ address {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon-frame {
+/* .footer-icon-frame {
     margin-left: 16px;
-}
+} */
 
 .footer-form-btn:hover,
 .footer-form-btn:focus {
@@ -878,7 +892,7 @@ textarea:focus {
     background-color: #404BBF;
 }
 
-/*_____________Media screen Header______________ */
+/*_____________Media screen______________ */
 
 @media screen and (min-width: 768px) {
 
@@ -908,10 +922,9 @@ textarea:focus {
     }
 
     .header-address-link {
-        color: #434455;
         font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.02em;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
     } 
 
     .header-address-link {
@@ -927,6 +940,29 @@ textarea:focus {
         display: none;
     }
 
+    /* _____________HERO______________ */
+
+    .hero {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/hero-tablet.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/hero-tablet2x.jpg);
+    }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        width: 496px;
+        margin-bottom: 36px;
+    }
+
     /* _____________FEATURE______________ */
 
     .feature-list {
@@ -935,8 +971,12 @@ textarea:focus {
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 72px;
-    } 
+    }
     
+    .feature-item-title {
+        text-align: start;
+    }
+
     .feature-item {
         width: calc((100% - 24px) / 2);
     }
@@ -1001,14 +1041,11 @@ textarea:focus {
 
     .footer-input {
         width: 264px;
+        margin-bottom: 0;
     }
 
     .footer-title-subscribe {
         justify-content: flex-start;
-    }
-
-    .footer-button {
-        align-items: flex-start;
     }
 }
 
@@ -1033,6 +1070,29 @@ textarea:focus {
     .header-address-link {
         font-size: 16px;
         line-height: 1.5;
+    }
+
+    /* _____________HERO______________ */
+
+    .hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/people-office2x.jpg);
+    }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        margin-bottom: 48px;
     }
 
     /* _____________FEATURE______________ */
@@ -1097,8 +1157,49 @@ textarea:focus {
 
     /* _____________FOOTER______________ */
 
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
+    .footer-container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        gap: 0;
+    }
 
+    .container-footer-link {
+        margin-left: 0;
+        margin-right: 120px;
+    }
+
+    .footer-link {
+        display: inline-block;
+    }
+
+    .footer-subscribe {
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+    }
+
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .footer-input {
+        margin-right: 0;
+    }
+
+    .footer-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
   
 
