@@ -951,9 +951,10 @@ textarea:focus {
 
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx), (min-resolution: 192dpi) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url(../images/hero-tablet2x.jpg);
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/hero-tablet2x.jpg);
+        }
     }
 
     .hero-title {
@@ -1083,9 +1084,10 @@ textarea:focus {
 
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx), (min-resolution: 192dpi) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url(../images/people-office2x.jpg);
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/people-office2x.jpg);
+        }
     }
 
     .hero-title {
@@ -1201,9 +1203,3 @@ textarea:focus {
         align-items: center;
     }
 }
-  
-
-
-
-
-
