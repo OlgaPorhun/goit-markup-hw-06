@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container header-container">
+        <!-- <div class="container header-container">
             <nav class="header-navigation">
                 <a class="header-logo" href="./index.html"><span class="header-logo-blue">Studio</span>Web</a>
                 <ul class="header-menu-list">
@@ -32,9 +32,59 @@
                     <use href="./images/icons.svg#icon-header-menu"></use>
                 </svg>
             </button>
+        </div> -->
+        <div class="molile-menu is-open">
+            <button type="button" class="mobile-close-btn">
+                <svg class="mobile-close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black-18dp"></use>
+                </svg>
+            </button>
+            <nav class="mobile-navigation">
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-item"><a class="mobile-menu-link current" href="./index.html">Studio</a></li>
+                    <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Portfolio</a></li>
+                    <li class="mobile-menu-item"><a class="mobile-menu-link" href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="mobile-address">
+                <ul class="mobile-address-list">
+                    <li class="mobile-address-item"><a class="header-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="mobile-address-item"><a class="header-address-link current" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+            <ul class="mobile-list-icon">
+                <li class="mobile-item-icon">
+                    <a href="" class="mobile-link-icon">
+                        <svg class="svg-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-item-icon">
+                    <a href="" class="mobile-link-icon">
+                        <svg class="svg-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-item-icon">
+                    <a href="" class="mobile-link-icon">
+                        <svg class="svg-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-item-icon">
+                    <a href="" class="mobile-link-icon">
+                        <svg class="svg-icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
-    <main class="main">
+    <!-- <main class="main">
         <section class="hero">
             <div class="container hero-container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -93,7 +143,8 @@
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list">
                     <li class="team-item">
-                        <img class="team-img" src="./images/photo1.jpg" alt="Mark Guerrero photo 1" width="264">
+                        <img class="team-img" srcset=""
+                        src="./images/photo1.jpg" alt="Mark Guerrero photo 1" width="264">
                         <div class="container-team-item">
                             <h3 class="team-subtitle">Mark Guerrero</h3>
                             <p class="team-text">Product Designer</p>
@@ -250,7 +301,10 @@
                 <ul class="potfolio-list">
                     <li class="portfolio-item">
                         <div class="portfolio-cover-content">
-                            <img class="portfolio-img" src="./images/banking.jpg" alt="Banking App" width="360">
+                            <picture>
+                                <source srcset="">
+                                <img class="portfolio-img" src="./images/banking.jpg" alt="Banking App" width="360">
+                            </picture>
                             <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="container-portfolio-item">
@@ -373,7 +427,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- <div class="backdrop is-open">
         <div class="modal">
             <button type="button" class="modal-close-btn">
